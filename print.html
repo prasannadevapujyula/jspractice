@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="dialogbox.js"> </script>
+    <script src="functions.js"> </script>
 </head>
 <body>
     <h1> heeyyy... I am back again</h1>
     <h1 id="hey"> hii, I am back again!!</h1> 
+    <h4 id="function"> </h4>
     <script> alert("displaying through alert")
         document.write("accessing an element by using document.write")
         document.getElementById("hey").innerHTML="changed by using inner.html"
+        function myFunction(a,b){
+            return (a+b);
+            }
+            let results = myFunction(3,5)
+            document.getElementById("function").innerHTML= results;
+
+
     </script>
 </body>
 </html>
